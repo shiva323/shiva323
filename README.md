@@ -1,16 +1,36 @@
-## Hi there 👋
+# Hi, I'm Shiva 👋
 
-<!--
-**shiva323/shiva323** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Neuroengineering | EEG Source Imaging | Brain Connectivity | NeuroAI
 
-Here are some ideas to get you started:
+I work at the intersection of **neuroscience, biomedical signal processing, and artificial intelligence**, with a particular interest in EEG analysis and brain source localization.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+My work focuses on processing and analyzing neurophysiological signals using **Python and MATLAB**, with tools such as **EEGLAB, Brainstorm, and MNE-Python**.
+
+
+## 🧠 Research Interests
+
+- EEG Signal Processing
+- EEG Source Localization
+- Brain Source Imaging
+- Functional & Effective Connectivity
+- Neuroimaging
+- Brain-Computer Interfaces
+- Machine Learning for Neuroscience
+- Deep Learning for Biomedical Signals
+
+## 🛠 Technical Stack
+
+### Neuroscience & Neuroimaging
+EEGLAB • Brainstorm • MNE-Python • EEG Source Localization
+
+### Programming
+Python • MATLAB
+
+### Scientific Computing
+NumPy • SciPy • Pandas • Scikit-learn
+
+### Machine Learning
+PyTorch • Scikit-learn
+
+### Development
+Git • GitHub • Linux • Jupyter • Docker

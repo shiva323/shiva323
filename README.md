@@ -1,36 +1,92 @@
-# Hi, I'm Shiva 👋
+<div align="center">
 
-### Neuroengineering | EEG Source Imaging | Brain Connectivity | NeuroAI
+# 🧠 Shiva
 
-I work at the intersection of **neuroscience, biomedical signal processing, and artificial intelligence**, with a particular interest in EEG analysis and brain source localization.
+### Neuroengineering • EEG Source Localization • Brain Signal Processing
 
-My work focuses on processing and analyzing neurophysiological signals using **Python and MATLAB**, with tools such as **EEGLAB, Brainstorm, and MNE-Python**.
+<p>
+  Exploring the brain through <b>signal processing</b>,
+  <b>computational neuroscience</b>, and <b>scientific programming</b>.
+</p>
 
+<p>
+  <img src="https://img.shields.io/badge/EEG-Signal%20Processing-6A5ACD?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Source-Localization-4B0082?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Neuroengineering-Research-483D8B?style=for-the-badge" />
+</p>
 
-## 🧠 Research Interests
+</div>
 
-- EEG Signal Processing
+---
+
+## 🧬 About Me
+
+I'm a biomedical engineer interested in understanding brain activity through
+**EEG signal processing, source localization, and computational neuroscience**.
+
+My work combines neuroscience with scientific programming, primarily using
+**Python and MATLAB**, alongside specialized neuroimaging tools such as
+**EEGLAB** and **Brainstorm**.
+
+Currently interested in:
+
+- 🧠 EEG signal processing
+- 📍 EEG source localization
+- 🔗 Functional brain connectivity
+- 🧩 Brain network analysis
+- 🧬 Computational neuroscience
+- 🤖 Machine learning for neural signals
+
+---
+
+## 🔬 Neuroengineering Toolkit
+
+<table>
+<tr>
+<td width="50%">
+
+### 🧠 Neuroscience
+
+- EEG preprocessing
 - EEG Source Localization
+- Brainstorm
+- EEGLAB
+- Functional Connectivity
 - Brain Source Imaging
-- Functional & Effective Connectivity
-- Neuroimaging
-- Brain-Computer Interfaces
-- Machine Learning for Neuroscience
-- Deep Learning for Biomedical Signals
 
-## 🛠 Technical Stack
+</td>
 
-### Neuroscience & Neuroimaging
-EEGLAB • Brainstorm • MNE-Python • EEG Source Localization
+<td width="50%">
 
-### Programming
-Python • MATLAB
+### 💻 Scientific Computing
 
-### Scientific Computing
-NumPy • SciPy • Pandas • Scikit-learn
+- Python
+- MATLAB
+- NumPy
+- SciPy
+- Jupyter
+- Linux
 
-### Machine Learning
-PyTorch • Scikit-learn
+</td>
+</tr>
+</table>
 
-### Development
-Git • GitHub • Linux • Jupyter • Docker
+---
+
+## ⚙️ Languages & Tools
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=python,matlab,linux,git,github,vscode" />
+
+<br><br>
+
+<img src="https://img.shields.io/badge/EEGLAB-EEG%20Analysis-blue?style=flat-square" />
+<img src="https://img.shields.io/badge/Brainstorm-Neuroimaging-purple?style=flat-square" />
+<img src="https://img.shields.io/badge/EEG-Source%20Localization-indigo?style=flat-square" />
+<img src="https://img.shields.io/badge/Scientific-Computing-green?style=flat-square" />
+
+</div>
+
+---
+

@@ -87,8 +87,3 @@ Currently interested in:
 <img src="https://img.shields.io/badge/Scientific-Computing-green?style=flat-square" />
 
 </div>
-## 📊 Coding Activity
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=shiva323&theme=github-compact&hide_border=true&area=true" />
-</p>

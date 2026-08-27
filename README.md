@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧠 Shiva
+# Hello, I am Shiva
 
 ### Neuroengineering • EEG Source Localization • Brain Signal Processing
 

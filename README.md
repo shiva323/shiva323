@@ -64,8 +64,9 @@ Currently interested in:
 - MATLAB
 - NumPy
 - SciPy
-- Jupyter
-- Linux
+- Pandas
+- Pytorch
+
 
 </td>
 </tr>

@@ -14,9 +14,78 @@
      و شاخهٔ مغز (EEG/fMRI) را *جداگانه* بسازی و اعتبارسنجی کنی؛
    - **مسیر C:** داده‌ی خودت را جمع کنی (EEG استراحت + نمونهٔ مدفوع + پرسشنامه‌ها). با تخصص
      EEG تو، این عملی‌ترین راه برای یک مقالهٔ واقعاً «روده–مغز» است.
+   - **مسیر D (بدون درخواست از نویسنده):** چهار طرح فقط با داده‌های کاملاً باز؛ بخش بعد را ببین.
 3. **هشدار روش‌شناختی:** دو دیتاست که افرادشان متفاوت‌اند (مثلاً ABIDE برای مغز و یک کوهورت
    میکروبیوم دیگر) را **نمی‌توان در سطح فرد ادغام کرد**. ادغام (fusion) فقط وقتی معنی دارد
    که هر دو داده از همان کودک باشد.
+
+---
+
+## سطح ۰ — فقط داده‌های کاملاً باز (بدون نیاز به درخواست از نویسنده)
+
+هیچ دیتاست بازی پیدا نکردم که برای **همان کودکان اوتیسم** هم مغز داشته باشد و هم روده. اما
+چهار طرح زیر را می‌شود فقط با دانلود مستقیم انجام داد. در هر طرح، نوع ارتباطی که با اوتیسم
+برقرار می‌شود جداگانه نوشته شده است.
+
+### D1 — RESONANCE: میکروبیوم + MRI + آزمون‌های شناختی در ۳۸۱ کودک ⭐ پیشنهاد اول
+
+| | |
+|---|---|
+| **مقاله** | Bonham et al., 2023, *Science Advances*، با عنوان *Gut-resident microorganisms and their genes are associated with cognition and neuroanatomy in children* |
+| **افراد** | ۳۸۱ کودک با رشد معمول، از ۴۰ روزگی تا ۱۰ سالگی |
+| **داده** | متاژنوم شاتگان مدفوع (پروفایل گونه‌ها، gene families، KO و Pfam)، **حجم نواحی مغز از MRI** (`brain_normalized.csv`)، نمرات شناختی و متادیتا (`complete_filtered_dataset.csv`) |
+| **دسترسی** | دانلود آزاد از Dryad، حدود ۶.۲ گیگابایت: [doi:10.5061/dryad.fxpnvx0zq](https://datadryad.org/dataset/doi:10.5061/dryad.fxpnvx0zq) |
+
+**ارتباط با اوتیسم: طرح «امضای میکروبی اوتیسم»**
+1. با داده‌های باز اوتیسم (پایین‌تر آمده‌اند) یک امضای میکروبی ASD در برابر TD بساز. منظور مجموعه‌ای از گونه‌ها یا مسیرهای عملکردی است، مثل Bifidobacterium، Desulfovibrio، تولید SCFA، مسیر تریپتوفان و GABA.
+2. به هر کودک RESONANCE یک «نمرهٔ شباهت به اوتیسم» بده.
+3. بررسی کن آیا این نمره با حجم نواحی مرتبط با اوتیسم رابطه دارد، مثل اینسولا، سینگولیت، آمیگدال و مخچه. این کار را با کنترل سن، جنس و عمق توالی انجام بده. چون نمره و MRI از **همان کودک** هستند، این تحلیل در سطح فرد معتبر است.
+4. محدودیت: این کودکان اوتیسم ندارند، پس نتیجه یک تحلیل **بُعدی (dimensional)** است و تشخیصی نیست.
+
+پایپ‌لاین `gutbrain` بدون تغییر روی این داده کار می‌کند. پروفایل گونه‌ها در نقش `microbiome_counts.csv` قرار می‌گیرد و حجم‌های مغزی در نقش `brain_features.csv`. بخش‌های sCCA، تحلیل میانجی و رگرسیون روی نمرهٔ شناختی همه قابل اجرا هستند.
+
+### D2 — Khula: میکروبیوم + **EEG** در ۱۹۴ نوزاد (مناسب تخصص EEG تو)
+
+| | |
+|---|---|
+| **مقاله** | Bonham, Margolis et al., 2025, *mBio*، با عنوان *Co-development of gut microbial metabolism and visual neural circuitry over human infancy* |
+| **افراد** | ۱۹۴ نوزاد در کیپ‌تاون، با ۳ ویزیت در حدود ۴، ۹ و ۱۴ ماهگی |
+| **داده** | ژن‌های میکروبی از متاژنوم شاتگان (`bonham_margolis_mbio_allunirefs.csv.gz`)، و **پتانسیل برانگیختهٔ بینایی (VEP)** شامل دامنه و تأخیر مؤلفه‌های N1، P1 و N2 در فایل `allmeta.csv` |
+| **دسترسی** | دانلود آزاد از Dryad، حدود ۵۱۱ مگابایت: [doi:10.5061/dryad.rn8pk0pq2](https://datadryad.org/dataset/doi:10.5061/dryad.rn8pk0pq2). کد: [Zenodo 10.5281/zenodo.15723691](https://doi.org/10.5281/zenodo.15723691). مقاله: [PMC12345167](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12345167/) |
+
+**ارتباط با اوتیسم:** این طرح فرضیه‌محور است. ماژول‌های ژنی روده–مغز که در اوتیسم مطرح شده‌اند را انتخاب کن، مثل سنتز و تخریب GABA، مسیر تریپتوفان و کینورنین، تولید propionate و p-cresol، و متابولیسم گوگرد. بعد بررسی کن آیا فراوانی این ماژول‌ها در ۴ ماهگی، تکامل VEP در ۹ تا ۱۴ ماهگی را پیش‌بینی می‌کند. پردازش بینایی اولیه یکی از نشانگرهای زودهنگام مطرح در اوتیسم است.
+محدودیت: فقط ویژگی‌های مشتق‌شدهٔ VEP منتشر شده و EEG خام در دسترس نیست. پس source localization ممکن نیست. پروفایل گونه‌ها هم در این فایل‌ها نیست و فقط ژن‌ها هستند.
+
+### D3 — Mendelian randomization: روده → مغز → اوتیسم با آمار خلاصهٔ GWAS
+
+| منبع | محتوا | دسترسی |
+|---|---|---|
+| **MiBioGen** (Kurilshikov et al., 2021, *Nat Genet*) | GWAS فراوانی taxaهای روده در ۱۸٬۳۴۰ نفر | دانلود از سایت MiBioGen. [مقالهٔ کنسرسیوم](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5992867/) |
+| **BIG40** (Smith et al., 2021, *Nat Neurosci*) | GWAS روی **۳۹۳۵ فنوتیپ تصویربرداری مغز** در UK Biobank (کوهورت کشف حدود ۲۲ هزار نفر) | دانلود آزاد: [open.win.ox.ac.uk/ukbiobank/big40](https://open.win.ox.ac.uk/ukbiobank/big40) و EBI GWAS Catalog با شناسه‌های GCST90002426 تا GCST90006360 |
+| **iPSYCH-PGC ASD** (Grove et al., 2019, *Nat Genet*) | GWAS تشخیص اوتیسم با ۱۸٬۳۸۱ بیمار و ۲۷٬۹۶۹ کنترل | دانلود از [PGC](https://pgc.unc.edu/for-researchers/download-results/) بعد از پذیرفتن شرایط استفاده. [شرایط iPSYCH](https://ipsych.au.dk/en/research/downloads) |
+
+**ارتباط با اوتیسم:** این تنها طرح کاملاً باز است که پیامد آن **خودِ تشخیص اوتیسم** است. طرح پیشنهادی MR دومرحله‌ای (mediation MR) است: taxon → فنوتیپ مغزی (IDP) → ASD. برای اطمینان از نتایج، تحلیل حساسیت (MR-Egger، weighted median، MR-PRESSO) و colocalization هم لازم است.
+در این طرح داده‌ی فردی وجود ندارد و EEG هم نیست. مقاله‌های MR مشابه منتشر شده‌اند، از جمله [NeuroImage 2025](https://www.sciencedirect.com/science/article/pii/S1053811925002952) و [MR روده–اوتیسم ۲۰۲۳](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10753022/). پس نوآوری باید از جای دیگری بیاید، مثلاً از mediation چندمتغیره روی IDPهای مشخص یا استفاده از GWASهای جدیدتر میکروبیوم.
+
+### D4 — مدل موشی اوتیسم: روده + مغز + رفتار در **همان حیوانات**
+
+| | |
+|---|---|
+| **مقاله** | Sharon et al., 2019, *Cell*، با عنوان *Human gut microbiota from ASD promote behavioral symptoms in mice* |
+| **طرح** | میکروبیوتای کودکان ASD و TD به موش‌های بدون میکروب پیوند زده شد |
+| **داده** | دادهٔ سطح شکل‌ها، شامل رفتار و 16S: [Mendeley Data](https://data.mendeley.com/datasets/ngzmj4zkms). متابولومیکس پلاسما و کولون: MetaboLights [MTBLS726](https://www.elucidata.io/datasets/dataset-of-the-week-mtbls726). **RNA-seq مغز**: GEO [GSE109827](https://pluto.bio/product/curated-data-sets/explore/experiment/gse109827-gut-microbiota-from-human-autism-spectrum-disorder-induces-behavioral-deficits-in-mice) |
+
+**ارتباط با اوتیسم:** این طرح مستقیماً به اوتیسم مربوط است و روده، متابولیت، مغز و رفتار را در همان حیوانات دارد. مغز در این‌جا ترانسکریپتوم است و تصویربرداری یا EEG ندارد.
+
+### داده‌های باز اوتیسم برای ساختن «امضای میکروبی» (ورودی طرح D1)
+
+| دیتاست | محتوا |
+|---|---|
+| **Kang 2017 MTT** ([figshare](https://springernature.figshare.com/collections/Microbiota_Transfer_Therapy_alters_gut_ecosystem_and_improves_gastrointestinal_and_autism_symptoms_an_open-label_study/3674866)) | 16S، متابولیت‌ها، CARS، SRS، ABC و GSRS |
+| **GEO GSE113540** ([OmicsDI](https://omicsdi.org/dataset/geo/GSE113540)) | متاژنوم شاتگان مدفوع از ۳۰ کودک ASD و ۳۰ کنترل. فرمت آن با RESONANCE سازگارتر است |
+| **PRJNA952791**، **GSE113690** و کوهورت‌های فراتحلیل Sci Rep 2022 | 16S در چند کوهورت؛ برای اعتبارسنجی بین‌کوهورتی امضا (leave-one-cohort-out) |
+
+> نکتهٔ هماهنگ‌سازی: داده‌های 16S را فقط در **سطح جنس** با داده‌های شاتگان مقایسه کن. داده‌های شاتگان را با یک ابزار واحد پردازش کن، مثلاً MetaPhlAn 4 از روی ریدهای خام SRA. امضا را هم فقط روی داده‌ای بساز که سن کودکانش با کودکان هدف هم‌خوان باشد، چون میکروبیوم نوزاد با میکروبیوم کودک ۶ ساله خیلی فرق دارد.
 
 ---
 

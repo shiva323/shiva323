@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+# generated locally: python scripts/make_synthetic.py / your own cohorts
+data/
+results/

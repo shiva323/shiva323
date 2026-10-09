@@ -1,0 +1,120 @@
+{
+  "cohort": "subjects: 220 {'ASD': 120, 'TD': 100}\nmicrobiome: 220 subjects x 120 features\nbrain: 184 subjects x 59 features\nmetabolites: 162 subjects x 30 features",
+  "covariates": [
+    "age",
+    "fiber_score",
+    "sex_M",
+    "site_site_B"
+  ],
+  "permanova": {
+    "pseudo_F": 1.8872714211923414,
+    "R2": 0.008582904362741797,
+    "p_value": 0.001
+  },
+  "n_taxa_tested": 116,
+  "n_taxa_q05": 6,
+  "n_brain_q05": 1,
+  "n_metabolites_q05": 2,
+  "scca": {
+    "n": 184,
+    "in_sample_r": [
+      0.6823707360647506,
+      0.5457921912253142
+    ],
+    "cv_r": 0.6377817933559405,
+    "perm_p": 0.001996007984031936
+  },
+  "mediation": [
+    {
+      "X": "Bifidobacterium",
+      "M": "wpli_alpha_frontal",
+      "Y": "SRS_total",
+      "n": 184,
+      "a_path": 0.5012681697416822,
+      "b_path": -0.2683506144061571,
+      "direct_c_prime": -0.04789004557866648,
+      "indirect_ab": -0.13451562133243025,
+      "indirect_ci_low": -0.18636703043708713,
+      "indirect_ci_high": -0.09042774843740137,
+      "indirect_p_boot": 0.0005,
+      "proportion_mediated": 0.7374530825184957
+    },
+    {
+      "X": "Desulfovibrio",
+      "M": "aperiodic_exponent",
+      "Y": "SRS_total",
+      "n": 184,
+      "a_path": -0.303011853446447,
+      "b_path": -0.2027597087421784,
+      "direct_c_prime": 0.08848198191155841,
+      "indirect_ab": 0.061438595150229244,
+      "indirect_ci_low": 0.03266349500243311,
+      "indirect_ci_high": 0.09930755286763218,
+      "indirect_p_boot": 0.0005,
+      "proportion_mediated": 0.4098076218377161
+    }
+  ],
+  "classification": {
+    "late_fusion": {
+      "AUC_mean": 0.642,
+      "AUC_sd": 0.0279,
+      "AUC_complete_cases": 0.6681,
+      "balanced_acc": 0.615,
+      "n_subjects": 220
+    },
+    "microbiome": {
+      "AUC_mean": 0.6315,
+      "AUC_sd": 0.0182,
+      "AUC_complete_cases": 0.6284,
+      "balanced_acc": 0.6003,
+      "n_subjects": 220
+    },
+    "brain": {
+      "AUC_mean": 0.6181,
+      "AUC_sd": 0.0632,
+      "AUC_complete_cases": 0.6382,
+      "balanced_acc": 0.5806,
+      "n_subjects": 184
+    },
+    "metabolites": {
+      "AUC_mean": 0.608,
+      "AUC_sd": 0.0136,
+      "AUC_complete_cases": 0.6212,
+      "balanced_acc": 0.5877,
+      "n_subjects": 162
+    },
+    "early_fusion": {
+      "AUC_mean": 0.5942,
+      "AUC_sd": 0.0219,
+      "AUC_complete_cases": 0.5942,
+      "balanced_acc": 0.5791,
+      "n_subjects": 139
+    }
+  },
+  "severity": {
+    "target": "SRS_total",
+    "results": [
+      {
+        "block": "microbiome",
+        "n": 120,
+        "r": 0.03828544334086196,
+        "R2": -0.013895384764730512,
+        "MAE": 6.2866743315978475
+      },
+      {
+        "block": "brain",
+        "n": 100,
+        "r": 0.4793894025780105,
+        "R2": 0.21088575577600166,
+        "MAE": 5.6286317762649345
+      },
+      {
+        "block": "metabolites",
+        "n": 87,
+        "r": 0.07160854436938525,
+        "R2": 0.0013955251214802233,
+        "MAE": 6.110070037277458
+      }
+    ]
+  }
+}
